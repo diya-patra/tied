@@ -27,7 +27,8 @@ if ($loggedin) {
 <body>
     <?php if(!$loggedin): ?>
         <!-- Visitor homepage (Forum tagline/about/contact) -->
-        <div class="header"><span class="logo">tied</span>
+        <div class="header">
+            <span class="logo">tied</span>
             <nav class="nav">
                 <a href="index.php" class="active">Home</a>
                 <a href="#about">About</a>
@@ -46,15 +47,17 @@ if ($loggedin) {
             </div>
             <a href="register.php" class="button" style="margin:30px 0;">Join Us Now</a>
             <hr style="margin: 40px 0; border: none; border-bottom: 1.5px solid #f6a547;">
+
             <h2 id="contact" style="font-family:'Joan',serif;">Contact Us</h2>
-            <form style="max-width:380px;margin-bottom:30px;">
+
+            <form action="send_mail.php" method="POST" style="max-width:380px;margin-bottom:30px;">
                 <div style="margin-bottom:14px;">
                     <label>Name:</label>
-                    <input type="text" style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;">
+                    <input type="text" name="name" required style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;">
                 </div>
                 <div style="margin-bottom:14px;">
                     <label>Message:</label>
-                    <textarea style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;min-height:90px;"></textarea>
+                    <textarea name="message" required style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;min-height:90px;"></textarea>
                 </div>
                 <button type="submit" class="button">Send</button>
             </form>
