@@ -21,6 +21,7 @@ if ($loggedin) {
 <head>
     <meta charset="UTF-8">
     <title>Tied Forum</title>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Joan:wght@400;700&family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>

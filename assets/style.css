@@ -58,6 +58,7 @@ body {
     transition: box-shadow 0.16s;
     box-shadow: 0 2px 8px #f4ca9c70;
 }
+
 .nav a.active, .nav button.active {
     box-shadow: 0 2px 18px #f4a53c29;
     background: var(--accent);
