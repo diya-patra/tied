@@ -124,8 +124,8 @@ body::after {
 }
 .sidebar a, .sidebar button {
     background: #fff;
-    border: 2px solid var(--bordercolor);
-    border-radius: 14px;
+    border-bottom: 2px solid var(--bordercolor);
+    border-radius: 0px 25px 25px 0px;
     padding: 13px 36px;
     color: #34290c;
     font-size: 1.2rem;
@@ -139,11 +139,11 @@ body::after {
 }
 .sidebar a.active, .sidebar button.active {
     background: var(--accent);
-    color: #fff;
+    color: #000000;
 }
 .sidebar a:hover, .sidebar button:hover {
     background: var(--accent);
-    color: #fff;
+    color: #000000;
 }
 
 /* Main layout */
@@ -163,6 +163,25 @@ body::after {
     border-radius: 25px;
     text-decoration: none;
     color: #000000;
+}
+
+.main-container .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .card .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: var(--font-joan);
 }
 
 /* Thread Cards */
@@ -222,6 +241,24 @@ body::after {
     color: #36260d;
 }
 
+.card .button {
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    background: var(--accent);
+    color: #000000;
+    font-family: var(--font-joan);
+    font-size: 1rem;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 3px 16px #ecb05633;
+
+    background: #FFA538;
+    border-radius: 25px;
+    text-decoration: none;
+}
 /* Forms */
 .form-panel {
     background: rgba(255,246,230,0.92);
@@ -243,7 +280,7 @@ body::after {
 .form-panel input[type="text"],
 .form-panel input[type="email"],
 .form-panel input[type="password"] {
-    width: 100%;
+    width: 90%;
     border-radius: 13px;
     border: 2px solid var(--accent);
     padding: 15px 20px;
@@ -255,17 +292,20 @@ body::after {
 }
 .form-panel .button {
     background: var(--accent);
-    color: #fff;
+    color: #000000;
     font-family: var(--font-joan);
     font-size: 1.2rem;
-    border-radius: 15px;
-    padding: 11px 44px;
+    padding: 15px;
     border: none;
     cursor: pointer;
     font-weight: 600;
     margin-top: 12px;
     margin-bottom: 6px;
     box-shadow: 0 3px 16px #ecb05633;
+
+    background: #FFA538;
+    border-radius: 25px;
+    text-decoration: none;
 }
 .form-panel a {
     color: #2655c1;
