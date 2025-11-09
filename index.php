@@ -38,32 +38,32 @@ if ($loggedin) {
             </nav>
         </div>
         <div class="main-container">
-            <h1 style="font-family:'Joan',serif;font-size:2.5rem;margin-top:36px;">Forum Tagline</h1>
-            <h2 style="font-family:'Joan',serif; font-weight:400; color:#b07800;">Forum Subline</h2>
+            <h1 style="font-family:'Joan',serif;font-size:2.5rem;margin-top:36px;">Tied — The Thread of Ideas.</h1>
+            <h2 style="font-family:'Joan',serif; font-weight:400; color:#b07800;">Every post starts a story. Every reply strengthens the tie.</h2>
             <a href="register.php" class="button" style="margin:30px 0;font-size:1.3rem;">Join Now</a>
-            <hr style="margin: 40px 0; border: none; border-bottom: 1.5px solid #f6a547;">
+            <hr style="margin: 40px 0; height: 0.5px; width: 80%; background-color: #000000ff; border: none; border-radius: 2px;">
             <h2 id="about" style="font-family:'Joan',serif;">About Us</h2>
             <div style="background:#fbeed6cc;border-radius:20px;padding:22px 34px;max-width:500px;font-size:1.13rem;">
                 We’re a small group of creators trying to create something new our very first forum web app! We have always loved how conversations can bring people together and we wanted to build a space  where anyone can share ideas, connect and just be themselves. We’re still learning, improving and figuring things out as we go, but every click, post and message helps us grow. Our goal isn’t to be perfect it’s to make a friendly, open space where  real people talk about real things. Thanks for checking us out. Your support means everything this is just the BEGINNING! 
             </div>
             <a href="register.php" class="button" style="margin:30px 0;">Join Us Now</a>
-            <hr style="margin: 40px 0; border: none; border-bottom: 1.5px solid #f6a547;">
+            <hr style="margin: 40px 0; height: 0.5px; width: 80%; background-color: #000000ff; border: none; border-radius: 2px;">
 
             <h2 id="contact" style="font-family:'Joan',serif;">Contact Us</h2>
 
             <form action="send_mail.php" method="POST" style="max-width:380px;margin-bottom:30px;">
                 <div style="margin-bottom:14px;">
                     <label>Name:</label>
-                    <input type="text" name="name" required style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;">
+                    <input type="text" name="name" required style="width:350px;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;">
                 </div>
                 <div style="margin-bottom:14px;">
                     <label>Message:</label>
-                    <textarea name="message" required style="width:100%;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;min-height:90px;"></textarea>
+                    <textarea name="message" required style="width:350px;border-radius:13px;padding:11px 17px;border:2px solid #f6a547;min-height:90px;"></textarea>
                 </div>
-                <button type="submit" class="button">Send</button>
+                <button type="submit" class="button" style="padding-left: 25px; padding-right: 25px; border: none;">Send</button>
             </form>
-            <footer style="margin-top:40px;">
-                <span class="logo" style="font-size:2rem;">tied</span>
+            <footer style="margin-top:40px; border-top:1px; border-color: #FFA538; height: 0.5px; width: 100%;">
+                <span class="logo" style="font-size:3.5rem;">tied</span>
                 <!-- social links icons can go here -->
             </footer>
         </div>

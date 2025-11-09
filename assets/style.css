@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Joan:wght@400;700&display=swap');
 
 :root {
-    --accent: #f6a547;
-    --bordercolor: #f7b958;
+    --accent: #FFA538;
+    --bordercolor: #FFA538;
     --sidebar-width: 240px;
     --main-bg: radial-gradient(circle at top left, #ffeacf 50%, #ffe2c0 100%);
     --font-cursive: 'Cedarville Cursive', cursive;
@@ -10,12 +10,50 @@
 }
 
 body {
-    background: var(--main-bg);
+    /* background: var(--main-bg); */
     margin: 0;
     font-family: var(--font-joan);
-    color: #36260d;
+    color: #000000;
     min-height: 100vh;
     position: relative;
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f9f9ff;
+    position: relative;
+    /* overflow: hidden; */
+    /* font-family: "Poppins", sans-serif; */
+}
+
+/* Right top blurred circle */
+body::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: #FFA538; /* pick your theme color */
+  border-radius: 50%;
+  filter: blur(350px);
+  opacity: 0.7;
+  z-index: -999;
+}
+
+/* Left bottom blurred circle */
+body::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 700px;
+  height: 700px;
+  background: #ffb703; /* secondary color */
+  border-radius: 50%;
+  filter: blur(350px);
+  opacity: 0.7;
+  z-index: -999;
 }
 
 .header {
@@ -31,9 +69,9 @@ body {
 
 .logo {
     font-family: var(--font-cursive);
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--accent);
-    margin-right: 28px;
+    margin-left: 28px;
 }
 
 .nav {
@@ -44,9 +82,9 @@ body {
 }
 
 .nav a, .nav button {
-    border-radius: 14px;
+    border-radius: 25px;
     background: #fff;
-    border: 2px solid var(--bordercolor);
+    border-bottom: 4px solid var(--bordercolor);
     color: #000000;
     font-size: 1.1rem;
     font-family: var(--font-joan);
@@ -110,9 +148,21 @@ body {
 
 /* Main layout */
 .main-container {
-    margin-left: calc(var(--sidebar-width) + 32px);
+    /* margin-left: calc(var(--sidebar-width) + 32px); */
     padding: 40px 36px;
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .button {
+    background: #FFA538;
+    padding: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Thread Cards */
